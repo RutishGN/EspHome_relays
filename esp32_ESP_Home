@@ -1,0 +1,96 @@
+esphome:
+  name: sahay-controller
+  friendly_name: SAHAY Controller
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+wifi:
+  ssid: "SSID"
+  password: "PASS"
+
+  ap:
+    ssid: "SAHAY-Fallback"
+    password: "12345678"
+
+logger:
+
+api:
+
+ota:
+  platform: esphome
+switch:
+  - platform: gpio
+    id: room1
+    name: "Room 1 Light"
+    pin:
+      number: GPIO15
+      inverted: true
+
+  - platform: gpio
+    id: room2
+    name: "Room 2 Light"
+    pin:
+      number: GPIO26
+      inverted: true
+
+  - platform: gpio
+    id: room3
+    name: "Room 3 Light"
+    pin:
+      number: GPIO13
+      inverted: true
+
+  - platform: gpio
+    id: room4
+    name: "Room 4 Light"
+    pin:
+      number: GPIO4
+      inverted: true
+
+  - platform: gpio
+    id: room5
+    name: "Room 5 Light"
+    pin: GPIO22
+
+  - platform: gpio
+    id: room6
+    name: "Room 6 Light"
+    pin: GPIO23
+
+  - platform: gpio
+    id: room7
+    name: "Room 7 Light"
+    pin: GPIO18
+
+  - platform: gpio
+    id: room8
+    name: "Room 8 Light"
+    pin: GPIO19
+
+  - platform: gpio
+    id: pathway
+    name: "Pathway Light"
+    pin: GPIO21
+
+uart:
+  rx_pin: GPIO16
+  tx_pin: GPIO17
+  baud_rate: 9600
+
+sensor:
+  - platform: pmsx003
+    type: PMSX003
+
+    pm_1_0:
+      name: "PM1.0"
+
+    pm_2_5:
+      name: "PM2.5"
+
+    pm_10_0:
+      name: "PM10"
+
+captive_portal:
