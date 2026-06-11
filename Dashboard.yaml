@@ -374,3 +374,67 @@ views:
             entity: switch.sahay_controller_room_3_light
           - type: tile
             entity: switch.sahay_controller_room_4_light
+  - title: Air Quality Monitoring
+    path: air-quality
+    icon: mdi:air-filter
+    cards:
+      - type: gauge
+        entity: sensor.sahay_controller_pm2_5
+        name: PM2.5
+        min: 0
+        max: 300
+        severity:
+          green: 0
+          yellow: 50
+          red: 100
+      - type: horizontal-stack
+        cards:
+          - type: gauge
+            entity: sensor.sahay_controller_pm1_0
+            name: PM1.0
+            min: 0
+            max: 300
+          - type: gauge
+            entity: sensor.sahay_controller_pm10
+            name: PM10
+            min: 0
+            max: 300
+      - type: entities
+        title: Air Quality Parameters
+        entities:
+          - sensor.sahay_controller_pm1_0
+          - sensor.sahay_controller_pm2_5
+          - sensor.sahay_controller_pm10
+      - type: history-graph
+        title: PM2.5 History
+        hours_to_show: 24
+        entities:
+          - sensor.sahay_controller_pm2_5
+      - type: history-graph
+        title: PM10 History
+        hours_to_show: 24
+        entities:
+          - sensor.sahay_controller_pm10
+      - type: markdown
+        content: |
+          # AQI Guide
+
+          🟢 0-50 : Good Air Quality
+
+          🟡 51-100 : Moderate
+
+          🟠 101-150 : Unhealthy for Sensitive Groups
+
+          🔴 151-200 : Unhealthy
+
+          🟣 201+ : Very Unhealthy
+
+          Recommended Actions:
+
+          • Open windows when AQI is below 50
+
+          • Start ventilation when AQI exceeds 100
+
+          • Run air purifier above 150
+
+          • Keep doors/windows closed above 200
