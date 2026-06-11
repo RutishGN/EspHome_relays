@@ -1,0 +1,376 @@
+views:
+  - type: panel
+    path: ''
+    cards:
+      - type: picture-elements
+        elements:
+          - type: conditional
+            conditions:
+              - condition: state
+                entity: switch.sahay_controller_room_1_light
+                state: 'on'
+            elements:
+              - type: image
+                style:
+                  left: 50%
+                  top: 50%
+                  width: 100%
+                entity: switch.sahay_controller_room_1_light
+                image:
+                  media_content_id: media-source://image_upload/670f063ec183cc341766b4be3446d0c2
+                  media_content_type: image/png
+                  metadata:
+                    title: room1.png
+                    thumbnail: /api/image/serve/670f063ec183cc341766b4be3446d0c2/256x256
+                    media_class: image
+                    navigateIds:
+                      - {}
+                      - media_content_type: app
+                        media_content_id: media-source://image_upload
+                tap_action:
+                  action: toggle
+                hold_action:
+                  action: none
+            title: room1
+          - type: state-icon
+            style:
+              left: 30%
+              top: 50%
+            entity: switch.sahay_controller_room_1_light
+            icon: mdi:lightbulb
+            tap_action:
+              action: toggle
+            hold_action:
+              action: none
+          - type: conditional
+            conditions:
+              - condition: state
+                entity: switch.sahay_controller_room_2_light
+                state: 'on'
+            elements:
+              - type: image
+                style:
+                  left: 50%
+                  top: 50%
+                  width: 100%
+                image:
+                  media_content_id: media-source://image_upload/29691ab402a686cbab9f83b0d89add6b
+                  media_content_type: image/png
+                  metadata:
+                    title: room2.png
+                    thumbnail: /api/image/serve/29691ab402a686cbab9f83b0d89add6b/256x256
+                    media_class: image
+                    navigateIds:
+                      - {}
+                      - media_content_type: app
+                        media_content_id: media-source://image_upload
+            title: room2
+          - type: state-icon
+            style:
+              left: 45%
+              top: 65%
+            entity: switch.sahay_controller_room_2_light
+            tap_action:
+              action: toggle
+            hold_action:
+              action: none
+          - type: conditional
+            conditions:
+              - condition: state
+                entity: switch.sahay_controller_room_3_light
+                state: 'on'
+            elements:
+              - type: image
+                style:
+                  left: 50%
+                  top: 50%
+                  width: 100%
+                image:
+                  media_content_id: media-source://image_upload/d71697481ae0ab452d0dd833d539042d
+                  media_content_type: image/png
+                  metadata:
+                    title: room3.png
+                    thumbnail: /api/image/serve/d71697481ae0ab452d0dd833d539042d/256x256
+                    media_class: image
+                    navigateIds:
+                      - {}
+                      - media_content_type: app
+                        media_content_id: media-source://image_upload
+            title: room3
+          - type: state-icon
+            style:
+              left: 53%
+              top: 65%
+            entity: switch.sahay_controller_room_3_light
+            icon: mdi:lightbulb
+            title: room3
+            tap_action:
+              action: toggle
+            hold_action:
+              action: none
+          - type: conditional
+            conditions:
+              - condition: state
+                entity: switch.sahay_controller_room_4_light
+                state: 'on'
+            elements:
+              - type: image
+                style:
+                  left: 50%
+                  top: 50%
+                  width: 100%
+                title: room4
+                entity: switch.sahay_controller_room_4_light
+                tap_action:
+                  action: toggle
+                image:
+                  media_content_id: media-source://image_upload/aaea81c46f79fcde278598493bf695a7
+                  media_content_type: image/png
+                  metadata:
+                    title: room4.png
+                    thumbnail: /api/image/serve/aaea81c46f79fcde278598493bf695a7/256x256
+                    media_class: image
+                    navigateIds:
+                      - {}
+                      - media_content_type: app
+                        media_content_id: media-source://image_upload
+            title: room4
+          - type: state-icon
+            style:
+              left: 110%
+              top: 65%
+              width: 100%
+            entity: switch.sahay_controller_room_4_light
+            icon: mdi:lightbulb
+            title: room4
+            tap_action:
+              action: toggle
+            hold_action:
+              action: none
+          - type: conditional
+            conditions:
+              - condition: state
+                entity: switch.sahay_controller_room_5_light
+                state: 'on'
+            elements:
+              - type: image
+                style:
+                  left: 50%
+                  top: 50%
+                  width: 100%
+                image:
+                  media_content_id: media-source://image_upload/897e45c3c3fb50e06615ee058d2baf3c
+                  media_content_type: image/png
+                  metadata:
+                    title: room5.png
+                    thumbnail: /api/image/serve/897e45c3c3fb50e06615ee058d2baf3c/256x256
+                    media_class: image
+                    navigateIds:
+                      - {}
+                      - media_content_type: app
+                        media_content_id: media-source://image_upload
+                entity: switch.sahay_controller_room_5_light
+                title: room5
+            title: room5
+          - type: state-icon
+            style:
+              left: 75%
+              top: 65%
+            entity: switch.sahay_controller_room_5_light
+            icon: mdi:lightbulb
+            title: room5
+            tap_action:
+              action: toggle
+            hold_action:
+              action: none
+          - type: conditional
+            conditions:
+              - condition: state
+                entity: switch.sahay_controller_room_6_light
+                state: 'on'
+            elements:
+              - type: image
+                style:
+                  left: 50%
+                  top: 50%
+                  width: 100%
+                image:
+                  media_content_id: media-source://image_upload/0ac01bdad1bd5caf7aad4a4fb1ab7917
+                  media_content_type: image/png
+                  metadata:
+                    title: room6.png
+                    thumbnail: /api/image/serve/0ac01bdad1bd5caf7aad4a4fb1ab7917/256x256
+                    media_class: image
+                    navigateIds:
+                      - {}
+                      - media_content_type: app
+                        media_content_id: media-source://image_upload
+                title: room6
+                tap_action:
+                  action: toggle
+                hold_action:
+                  action: none
+            title: room6
+          - type: state-icon
+            style:
+              left: 75%
+              top: 30%
+            entity: switch.sahay_controller_room_6_light
+            title: room6
+            tap_action:
+              action: toggle
+            hold_action:
+              action: none
+          - type: conditional
+            conditions:
+              - condition: state
+                entity: switch.sahay_controller_room_7_light
+                state: 'on'
+            elements:
+              - type: image
+                style:
+                  left: 50%
+                  top: 50%
+                  width: 100%
+                image:
+                  media_content_id: media-source://image_upload/a0ec885219fbeb480d2345964e537a68
+                  media_content_type: image/png
+                  metadata:
+                    title: room7.png
+                    thumbnail: /api/image/serve/a0ec885219fbeb480d2345964e537a68/256x256
+                    media_class: image
+                    navigateIds:
+                      - {}
+                      - media_content_type: app
+                        media_content_id: media-source://image_upload
+                entity: switch.sahay_controller_room_7_light
+                title: room7
+            title: room7
+          - type: state-icon
+            style:
+              left: 60%
+              top: 30%
+            entity: switch.sahay_controller_room_7_light
+            tap_action:
+              action: toggle
+            hold_action:
+              action: none
+          - type: conditional
+            conditions:
+              - condition: state
+                entity: switch.sahay_controller_room_8_light
+                state: 'on'
+            elements:
+              - type: image
+                style:
+                  left: 50%
+                  top: 50%
+                  width: 100%
+                image:
+                  media_content_id: media-source://image_upload/2e34b0ae8eb9e8d189e2e67f86a879b9
+                  media_content_type: image/png
+                  metadata:
+                    title: room8.png
+                    thumbnail: /api/image/serve/2e34b0ae8eb9e8d189e2e67f86a879b9/256x256
+                    media_class: image
+                    navigateIds:
+                      - {}
+                      - media_content_type: app
+                        media_content_id: media-source://image_upload
+            title: room8
+          - type: state-icon
+            style:
+              left: 50%
+              top: 48%
+            entity: switch.sahay_controller_room_8_light
+            tap_action:
+              action: toggle
+            hold_action:
+              action: none
+          - type: conditional
+            conditions:
+              - condition: state
+                entity: switch.sahay_controller_pathway_light
+                state: 'on'
+            elements:
+              - type: image
+                style:
+                  left: 50%
+                  top: 50%
+                  width: 100%
+                image:
+                  media_content_id: media-source://image_upload/0a89eff92249594382a897fefded364e
+                  media_content_type: image/png
+                  metadata:
+                    title: room9.png
+                    thumbnail: /api/image/serve/0a89eff92249594382a897fefded364e/256x256
+                    media_class: image
+                    navigateIds:
+                      - {}
+                      - media_content_type: app
+                        media_content_id: media-source://image_upload
+                entity: switch.sahay_controller_pathway_light
+            title: pathway
+          - type: state-icon
+            style:
+              left: 60%
+              top: 55%
+            entity: switch.sahay_controller_pathway_light
+            tap_action:
+              action: toggle
+            hold_action:
+              action: none
+        image:
+          media_content_id: /local/night_BG.png
+          media_content_type: ''
+          metadata:
+            navigateIds:
+              - {}
+              - media_content_type: ''
+                media_content_id: __MANUAL_ENTRY__
+        dark_mode_image:
+          media_content_id: media-source://image_upload/e3df7be8822d8db57239228f6b0c2b32
+          media_content_type: image/png
+          metadata:
+            title: night_BG.png
+            thumbnail: /api/image/serve/e3df7be8822d8db57239228f6b0c2b32/256x256
+            media_class: image
+            navigateIds:
+              - {}
+              - media_content_type: app
+                media_content_id: media-source://image_upload
+    icon: mdi:floor-plan
+    subview: false
+    background:
+      opacity: 33
+      alignment: center
+      size: cover
+      repeat: repeat
+      attachment: fixed
+      image:
+        media_content_id: media-source://image_upload/475746cfb5c5523c56d86191d33dc6b7
+        media_content_type: image/png
+        metadata:
+          title: logo.png
+          thumbnail: /api/image/serve/475746cfb5c5523c56d86191d33dc6b7/256x256
+          media_class: image
+          navigateIds:
+            - {}
+            - media_content_type: app
+              media_content_id: media-source://image_upload
+  - type: sections
+    title: Floor Plan Based light Control
+    icon: mdi:floor-plan
+    sections:
+      - type: grid
+        cards:
+          - type: heading
+            heading: SAHAY Controller
+          - type: tile
+            entity: switch.sahay_controller_room_1_light
+          - type: tile
+            entity: switch.sahay_controller_room_2_light
+          - type: tile
+            entity: switch.sahay_controller_room_3_light
+          - type: tile
+            entity: switch.sahay_controller_room_4_light
